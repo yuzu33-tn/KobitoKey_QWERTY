@@ -48,20 +48,19 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N0     &kp N1  &kp N2  &kp N3     &trans  &kp MINUS  &trans     &kp UP    &trans     &trans
-&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans  &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &kp N7  &kp N8  &kp N9     &trans  &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
-&trans     &trans  &trans  &kp LSHFT  &trans  &trans     &trans     &trans    &trans     &trans
+&kp MINUS  &kp N7  &kp N8        &kp N9        &kp CARET   &kp LPAR  &kp RPAR         &kp EXCL      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&kp PLUS   &kp N4  &kp N5        &kp N6        &kp SLASH   &kp LBKT  &kp RBKT         &kp QUESTION  &kp SEMI          &kp COLON
+&kp ASTRK  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp LBRC  &kp RIGHT_BRACE  &kp SLASH     &kp BACKSLASH     &kp UNDERSCORE
+&kp EQUAL  &kp N0  &kp ENTER     &kp LSHFT     &trans      &trans    &trans           &trans        &kp PERCENT       &kp AT_SIGN
             >;
         };
 
-        layer2 {
-            label = "FUNCTION";
+        layer_2 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans  &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none          &mkp MB1  &kp UP    &mkp MB2   &mkp MB3
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp HOME
+&kp F11  &kp F12  &trans  &trans  &none    &kp PAGE_DOWN  &trans    &trans    &trans     &kp END
+&trans   &trans   &trans  &trans  &trans   &trans         &trans    &trans    &trans     &trans
             >;
         };
 
@@ -72,6 +71,16 @@
 &trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans  &trans    &trans    &to 0     &kp RALT
+            >;
+        };
+
+        layer2 {
+            label = "bluetooth";
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans  &trans  &trans
             >;
         };
     };
